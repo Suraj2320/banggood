@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style
+    >#container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, auto);
+        gap: 10px;
+      
+        width: 70%;
+        margin: auto;
+       
+      }
+      p + img {
+        height: 50px;
+        display: block;
+        margin: auto;
+          
+      }
+      h3{
+        display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    height: 22px;
+    color: #ff4733;
+    vertical-align: top;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;    
+    list-style-type: disc;
+    margin-bottom: -13px;
+    
+}
+      
+      p{
+        font-size: 13px;
+    color: #666;
+    line-height: 18px;
+    font-family: OpenSans,Arial;
+    text-decoration: line-through;
+    margin-bottom: -1px;
+    
+      }
+      h6{
+        display: block;
+    font-size: 13px;
+    color: #999;
+    height: 18px;
+    line-height: 18px;
+    margin-top: 4px;
+    overflow: hidden;
+    cursor: pointer;
+    margin-bottom: -18px;
+    
+      }
+      h5{
+        display: block;
+    font-size: 13px;
+    color: #999;
+    height: 18px;
+    line-height: 18px;
+    overflow: hidden;
+    cursor: pointer;
+    font-family: OpenSans,Arial;
+    
+
+      }
+      img{
+        color: #656d78;
+    text-decoration: none;
+    outline: none;
+    border-color: #666;
+    border-radius: 10px;
+      }
+      span{
+        font-size: 25px;
+    font-weight: 400;
+    color: #999;         
+    padding: 240px;    
+        }
+    .price-input{
+     margin-bottom: 40px;
+      }
+      button{
+      color: white;
+      background-color: #ff4733;;
+      margin-left: 50%;
+      margin-top: 20px;
+      }        
+      </style>
+</head>
+<body>
+    <span data-spm="00000000a-0" property="name">Home > Phones & accesories</span>
+    <div data-spm="0000001VS" class="price-input"><span data-spm="0000001VT" class="block-title">Price</span><input data-spm="0000001VU" type="text" class="price-input-start" dpid="middle_price_text_180710|category|18206083321" placeholder="min" value="" data-value="">-<input data-spm="0000001VV" type="text" dpid="middle_price_text_180710|category|18206083321" class="price-input-end" placeholder="max" value="" data-value=""></div>
+    
+
+    
+    
+    
+    
+    <div id="container"></div>
+
+    <button>Next Page</button>
+
+
+</body>
+</html>
+
+<script>
+     var investorsData = [
+    {
+      avatar:
+        "https://imgaz1.staticbg.com/thumb/gallery/oaupload/banggood/images/B4/8D/41da7abb-aa68-43fc-b169-41191b8fb4db.jpg.webp",
+      name: "₹11,455.54",
+      position: "₹24,548.4753% Off",
+      name1: "[Face Unlock]TICWRIS MAX 2.86 Inchl",
+      name2:"124reviews"
+    },
+    {
+      avatar:
+        "https://imgaz1.staticbg.com/thumb/gallery/oaupload/ser1/banggood/images/56/1C/b5d43678-d19e-44c2-98f4-048c8f3bdc00.jpg.webp",
+      name: "₹1,275.78",
+      position: "₹6,779.4914% Off",
+      name1: "W2025 Rugged Feature Phone Dual",
+      name2:"174reviews"
+    },
+    {
+      avatar:
+        "https://imgaz2.staticbg.com/thumb/gallery/oaupload/banggood/images/99/C3/85a2b7f1-9062-4642-aa36-61345d8a6383.jpg.webp",
+      name: "₹5,844.28",
+      position: "US$86.9914% Off",
+      name1: "SOYES XS11 3G Mini Smart Android",
+      name2:"124reviews"
+    },
+    {
+      avatar:
+        "https://imgaz3.staticbg.com/thumb/gallery/oaupload/banggood/images/DF/72/6c64aa2e-f788-43df-a322-9da6b9251d75.jpg.webp",
+      name: "₹1,869.64",
+      position: "₹2,259.3117% Off",
+      name1: "Bakeey for Xiaomi Redmi Note 10",
+      name2:"124reviews"
+    },
+    {
+      avatar:
+        "https://imgaz2.staticbg.com/thumb/gallery/oaupload/banggood/images/8F/83/a1e9f70f-5f78-494d-a856-24f3217e18b9.jpg.webp",
+      name: "₹6,896.39",
+      position: "₹19,092.3064% Off",
+      name1: "SOYES XS12 4G Mini Smart Phone",
+      name2:"124reviews"
+    },
+    {
+      avatar:
+        "https://imgaz3.staticbg.com/thumb/gallery/oaupload/banggood/images/BD/CF/c1587418-354b-449f-978d-3bfb4d776cb9.jpg.webp",
+      name: "₹2,493.1",
+      position: "₹5,454.6154% Off",
+      name1: "BlitzWolf® BW-BTS6 bluetooth 5.0",
+      name2:"608reviews",
+    },
+    {
+      avatar:
+        "https://imgaz3.staticbg.com/thumb/gallery/oaupload/banggood/images/7B/2E/ed015f69-6014-490b-889f-cce0e0590b57.jpg.webp",
+      name: "₹1,168.23",
+      position: "₹2,259.3148% Off",
+      name1: "Bakeey for Doogee S88 Pro/ Doogee",
+      name2:"51reviews",
+    },
+    {
+      avatar:
+        "https://imgaz2.staticbg.com/thumb/gallery/oaupload/banggood/images/4F/37/3bb899e9-db6f-486f-b1b0-ddc059b25b2c.jpg.webp",
+      name: "₹2,259.319",
+      position: "₹5,454.6159% Off",
+      name1: "SENBONO GTS3 1.69 inch HD Full",
+      name2:"51reviews",
+    },
+    {
+      avatar:
+        "https://imgaz.staticbg.com/thumb/gallery/oaupload/banggood/images/AB/E9/b11a11dd-8848-427b-8f7a-e5427eae0996.jpg.webp",
+      name: "₹2,415.18",
+      position: "₹4,441.4746% Off",
+      name1: "BlitzWolf® BW-BR7 NFC-enabled",
+      name2:"511reviews",
+    },
+    {
+      avatar:
+        "https://imgaz1.staticbg.com/thumb/gallery/oaupload/banggood/images/03/5B/bd0f503f-74c4-41a1-87d4-042339146293.jpg.webp",
+      name: "₹1,324.10",
+      position: "₹2,103.4437% Off",
+      name1: "enovo QT81 TWS bluetooth 5.0",
+      name2:"151reviews",
+    },
+    {
+      avatar:
+        "https://imgaz2.staticbg.com/thumb/gallery/oaupload/banggood/images/2C/CE/5805d750-731a-47ea-85f7-52c6cd2fcbf2.jpg.webp",
+      name: "₹20,964.28",
+      position: "₹33,433.7437% Off",
+      name1: "Xiaomi Redmi Note 11 Global",
+      name2:"115reviews",
+    },
+    {
+      avatar:
+        "https://imgaz2.staticbg.com/thumb/gallery/oaupload/banggood/images/66/1C/9df983f6-3d67-4c3f-a8bf-e9ea68efceb5.jpg.webp",
+      name: "₹2,337.24",
+      position: "U₹3,272.4529% Off",
+      name1: "Ulefone for Ulefone Power ARMOR",
+      name2:"511reviews",
+    },
+    {
+      avatar:
+        "https://imgaz1.staticbg.com/thumb/gallery/oaupload/banggood/images/A2/51/a4bb6179-0f1b-4d16-9544-0d59c2fe546b.jpg.webp",
+      name: "₹26,419.67",
+      position: "U₹3,272.4529% Off",
+      name1: "Xiaomi Redmi 9A Global Version",
+      name2:"52reviews",
+    },
+    {
+      avatar:
+        "https://imgaz3.staticbg.com/thumb/gallery/oaupload/banggood/images/B4/7C/8b5d1473-7564-43ff-a629-565fa3df6366.jpg.webp",
+      name: "₹4,207.66",
+      position: "₹9,351.3255% Off",
+      name1: "OKMAT APPLLP 6 1.6 inch",
+      name2:"52reviews",
+    },
+    {
+      avatar:
+        "https://imgaz.staticbg.com/thumb/gallery/oaupload/banggood/images/B5/BB/26e3f029-f7d7-4ae3-bf0b-d6f4563ae3b1.jpg.webp",
+      name: "₹1,557.90",
+      position: "₹2,337.2433% Off",
+      name1: "B126 bluetooth 5.0 Speaker Alarm",
+      name2:"51reviews",
+    },
+    {
+      avatar:
+        "https://imgaz2.staticbg.com/thumb/gallery/oaupload/banggood/images/9C/B3/e8fe90f9-e578-4584-b9a8-8740814ed989.jpg.webp",
+      name: "₹20,964.28",
+      position: "US$26.9937% Off",
+      name1: "POCO X4 Pro 5G Global Version",
+      name2:"53reviews",
+    },
+    {
+      avatar:
+        "https://imgaz3.staticbg.com/thumb/gallery/oaupload/banggood/images/74/6B/03a9bd5c-c732-4c23-b1e7-6f56288df514.jpg.webp",
+      name: "₹1,109.00",
+      position: "₹2,258.5351% Off",
+      name1: "Bakeey for Umidigi A11 Pro Max",
+      name2:"533reviews",
+    },
+    {
+      avatar:
+        "https://imgaz2.staticbg.com/thumb/gallery/oaupload/banggood/images/09/79/399e192a-d21c-4008-979c-5a840f8c857f.jpg.webp",
+      name: "₹26,419.67",
+      position: "₹44,344.5240% Off",
+      name1: "POCO F3 Global Version 6.67 inch",
+      name2:"225reviews",
+    },
+    {
+      avatar:
+        "https://imgaz.staticbg.com/thumb/gallery/oaupload/banggood/images/9A/C7/66f35372-1054-4cf5-aa60-80e108cb49bb.jpg.webp",
+      name: "₹7,792.63",
+      position: "₹11,845.2134% Off",
+      name1: "SOYES S10-H 4G Mini SmartPhone",
+      name2:"115reviews",
+    },
+    {
+      avatar:
+        "https://imgaz.staticbg.com/thumb/gallery/oaupload/banggood/images/3C/15/aed33e1a-e121-4b31-8b08-c0a666b30a6d.jpg.webp",
+        name: "₹1,109.00",
+      position: "₹2,258.5351% Off",
+      name1: "TG TG621 bluetooth 5.0 Speaker",
+      name2:"522reviews",
+    },
+    {
+      avatar:
+        "https://imgaz1.staticbg.com/thumb/gallery/oaupload/banggood/images/B4/8D/41da7abb-aa68-43fc-b169-41191b8fb4db.jpg.webp",
+        name: "₹11,455.54",
+      position: "₹24,548.4753% Off",
+      name1: "[Face Unlock]TICWRIS MAX 2.86 Inchl",
+      name2:"124reviews"
+    },
+    {
+      avatar:
+        "https://imgaz1.staticbg.com/thumb/gallery/oaupload/banggood/images/A2/51/a4bb6179-0f1b-4d16-9544-0d59c2fe546b.jpg.webp",
+        name: "₹26,419.67",
+      position: "₹44,344.5240% Off",
+      name1: "Xiaomi Redmi 9A Global Version",
+      name2:"52reviews",
+    },
+    {
+      avatar:
+        "https://imgaz.staticbg.com/thumb/gallery/oaupload/banggood/images/AB/E9/b11a11dd-8848-427b-8f7a-e5427eae0996.jpg.webp",
+        name: "₹2,415.18",
+      position: "₹4,441.4746% Off",
+      name1: "BlitzWolf® BW-BR7 NFC-enabled",
+      name2:"511reviews",
+    },
+    {
+      avatar:
+        "https://imgaz2.staticbg.com/thumb/gallery/oaupload/banggood/images/4F/37/3bb899e9-db6f-486f-b1b0-ddc059b25b2c.jpg.webp",
+        name: "₹2,259.319",
+      position: "₹5,454.6159% Off",
+      name1: "SENBONO GTS3 1.69 inch HD Full",
+      name2:"51reviews",
+    },
+
+   
+   
+   
+   
+    
+  ];
+      
+  investorsData.forEach(function (elem) {
+    var box = document.createElement("div");
+    var investor_avatar = document.createElement("img");
+    investor_avatar.setAttribute("src", elem.avatar);
+    var investor_name = document.createElement("h3");
+    investor_name.innerText = elem.name;
+    var investor_role = document.createElement("p");
+    investor_role.innerText = elem.position;
+    var investor_company = document.createElement("h6");
+    investor_company.innerText=elem.name1
+    var reviews = document.createElement("h5");
+    reviews.innerText = elem.name2;
+    box.append(investor_avatar, investor_name, investor_role, investor_company,reviews);
+    document.querySelector("#container").append(box);
+  });
+</script>
